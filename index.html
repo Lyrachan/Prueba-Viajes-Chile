@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  <!-- IMPLEMENTAR ÍCONO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> <!-- Fuentes -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> <!-- CDN de Bootstrap -->
+    <link rel="stylesheet" href="assets/css/estilo.css"> <!-- CSS propio al final del head -->
+</head>
+<body>
+    
+    <!-- Sección del Navbar -->
+<header> <!-- DELETE THIS -->
+    <nav class="navbar navbar-expand-lg bg-transparent z-2 position-relative"> <!-- Para superponer elementos empleé el z-index de bootstrap con "z-2" -->
+        <div class="container"> <!-- -fluid eliminado -->
+          <a class="navbar-brand text-white fs-4" href="#"><img class="img-fluid logo me-2" src="assets/img/viajes.svg" alt="Logo">Viajes Chile</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active text-white text-opacity-75" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white text-opacity-75" href="#">Quiénes Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white text-opacity-75" href="#">Destacados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white text-opacity-75" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Fin de la sección Navbar -->
+
+
+
+
+    <!-- Carousel -->
+
+    <div id="carouselExample" class="carousel slide carrusel top-0 z-1 position-absolute"> <!-- Empleé top-0 y z-1 para superponer navbar con carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="Alpacas">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="Moais">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="Pingüino">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>  <!-- DELET THIS-->
+    <!-- Fin del Carousel -->
+ 
+
+    <!-- Sección Quiénes Somos -->
+      <section class="quienes-somos d-none d-md-block text-white bg-black">
+        <h1 class="text-center">¿QUIÉNES SOMOS?</h1>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4">  <!-- No es requisito para el desafío, pero lo estructuro de manera responsiva de todos modos -->
+                <!-- <span class="badge text-bg-info">Info</span> -->
+                <!-- texto -->
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <!-- texto -->
+                <!-- <span class="badge text-bg-info">Info</span> -->
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <!-- <span class="badge text-bg-info">Info</span> -->
+                <!-- texto -->
+            </div>
+                        
+        </div>
+      </section>
+    
+    <!-- Fin de Sección Quiénes Somos -->
+
+
+
+
+    <!-- Sección de Cards/Destacados -->
+
+      <h1 class="text-center">Destacados</h1>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-3">
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3">
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3">
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3">
+
+        </div>
+      </div>
+
+    <!-- Fin de Sección de Cards/Destacados -->
+
+
+
+
+    <!-- Formulario de contacto -->
+    <section class="bg-black">
+        <h1 class="text-center text-white py-5">CONTACTO</h1>
+      <div class="formulario mx-4 text-white">    
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+            <input type="email" class="form-control" id="FormControlInput1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+            <input type="email" class="form-control" id="FormControlInput2">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="button" class="btn btn-info mb-3">Enviar</button>
+      </div>
+    </section>
+    <!-- Fin de Formulario de contacto -->
+
+
+
+
+    <!-- Footer -->
+
+    <footer class="container-fluid bg-info">
+        <div class="ms-auto">
+            <h2>VIAJES CHILE     
+                <!-- añadir los logos -->
+            </h2>
+        </div>
+    </footer>
+
+    <!-- Fin del Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> <!-- Javascript de Bootstrap por CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> <!-- Instalación de JQuery -->
+    <script src="assets/js/app.js"></script> <!-- Instalación de Javascript local -->
+</body>
+</html>

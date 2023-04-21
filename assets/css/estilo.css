@@ -1,0 +1,15 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.logo {
+    width: 2em;
+}
+
+.quienes-somos {
+    margin-top: 63%;    /* Como empleé un position-absolute en la sección anterior (header), tuve que utilizar un margin-top extenso para que esta sección no quedara cubierta por el carousel, pero al emplear la medida en porcentajes obtiene una exposición responsiva aceptable en caso de necesitarlo (afortunadamente esta sección debe desaparecer en dispositivos móviles) */
+}
+
+/* Copiar el quienes-somos para hacer un espacio en blanco para la versión móvil */
+
+/* font-family: 'PT Sans', sans-serif; */
