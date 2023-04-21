@@ -2,6 +2,10 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
+h1, h2 {
+    font-family: 'Alegreya', serif;
+}
+
 .logo {
     width: 2em;
 }
@@ -13,6 +17,7 @@ body {
 .icono {
     width: 2rem;
     fill: white;
+    margin-left: 0.7em;
 }
 
 .card-img-top {
@@ -23,6 +28,6 @@ body {
     color: rgb(255, 255, 255);
 }
 
-/* Copiar el height de quienes-somos para hacer un espacio en blanco para la versión móvil */
-
-/* font-family: 'PT Sans', sans-serif; */
+/* Fuentes:
+font-family: 'Alegreya', serif;
+font-family: 'PT Sans', sans-serif; */
